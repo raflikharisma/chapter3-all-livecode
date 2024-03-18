@@ -2,7 +2,6 @@ const express = require("express");
 const morgan = require("morgan");
 //Using fs modules
 
-
 const app = express();
 const customerRouter = require("./routes/customerRoutes")
 app.use(express.json());//middleware
