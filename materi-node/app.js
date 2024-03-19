@@ -8,7 +8,6 @@ app.use(express.json());//middleware
 app.use(morgan('dev')); // third party middleware
 
 
-// our own middleware
 app.use((req, res, next) =>{
   req.requesTime = new Date().toISOString();
   next();
